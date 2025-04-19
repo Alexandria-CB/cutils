@@ -14,6 +14,6 @@ extern cutils_free_t cutils_free;
 /**
  * @brief Set the memory allocation and free functions to be used by the cutils library
  */
-void cutils_init(cutils_malloc_t _malloc, cutils_calloc_t _calloc, cutils_free_t _free);
+void cutils_memory_init(cutils_malloc_t _malloc, cutils_calloc_t _calloc, cutils_free_t _free);
 
 #endif//CUTILS_MEMORY_H
