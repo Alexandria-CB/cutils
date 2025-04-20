@@ -57,3 +57,5 @@ dkms.conf
 # Build locations
 build/*.o
 lib/*.a
+test/*.o 
+test/test_cutils
