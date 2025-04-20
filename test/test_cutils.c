@@ -4,6 +4,12 @@
 
 int main(int argc, char * argv[])
 {
-    test_cutils_list();
+    size_t i = 0;
+    unit_test_t test = tests[i];
+    while(test)
+    {
+        test();
+        test = tests[++i];
+    }
     return 0;
 }

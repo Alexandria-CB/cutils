@@ -7,4 +7,4 @@ TEST_OBJECTS=test_cutils.o test_cutils_list.o
 test: test_cutils
 
 test_cutils: $(TEST_OBJECTS)
-	$(CC) $(TEST_CFLAGS) -o $@ $(TEST_OBJECTS)
+	$(CC) $(TEST_CFLAGS) -o $@ $(TEST_OBJECTS) -L ../lib -l:libcutils.a
