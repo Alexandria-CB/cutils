@@ -10,7 +10,7 @@ struct cutils_list_elem {
 struct cutils_list {
     size_t count;
     struct cutils_list_elem * head;
-    struct cutils_list_tail * tail;
+    struct cutils_list_elem * tail;
     cutils_list_free_t _free;
     void * user_data;
 };

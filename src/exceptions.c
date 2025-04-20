@@ -61,7 +61,7 @@ cutils_exception_code_t cutils_exception_ctx_try_impl(struct cutils_exception_ct
         return cutils_internal_error;
     }
 
-    return setjmp(env);
+    return setjmp(*env);
 }
 
 noreturn void cutils_exception_ctx_raise_impl(struct cutils_exception_ctx * ctx, cutils_exception_code_t except, void * data, cutils_free_t _free)

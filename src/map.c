@@ -203,7 +203,7 @@ enum cutils_retcode cutils_map_remove(struct cutils_map * map, void * key, void 
 
     struct cutils_map_elem * data = NULL;
 
-    if (cutils_failure(cutils_list_remove(bucket, found_elem, &data)))
+    if (cutils_failure(cutils_list_remove(bucket, found_elem, (void **)&data)))
     {
         return CUTILS_FAILURE;
     }
