@@ -53,3 +53,7 @@ dkms.conf
 
 # VS Code
 .vscode/
+
+# Build locations
+build/*.o
+lib/*.a
